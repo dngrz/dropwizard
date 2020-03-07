@@ -228,7 +228,7 @@
         <repository>
             <id>snapshot</id>
             <name>Sonatype Nexus Snapshots</name>
-            <url>http://192.168.56.1:8082/repository/maven-snapshots/</url>
+            <url>http://localhost:7003/artifactory/libs-snapshot-local/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -242,12 +242,12 @@
         <snapshotRepository>
             <id>snapshot</id>
             <name>libs-snapshots</name>
-            <url>http://192.168.56.1:8082/repository/maven-snapshots/</url>
+            <url>http://localhost:7003/artifactory/libs-snapshot-local/</url>
         </snapshotRepository>
 		<repository>
-			<id>nexus</id>
+			<id>artifactory-oss</id>
 			<name>libs-release</name>
-			<url>http://192.168.56.1:8082/repository/maven-releases/</url>
+			<url>http://localhost:7003/artifactory/libs-release-local/</url>
 		</repository>
         <site>
             <id>dropwizard-site</id>
