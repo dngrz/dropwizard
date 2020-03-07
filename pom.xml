@@ -25,7 +25,9 @@
         <module>dropwizard-migrations</module>
         <module>dropwizard-hibernate</module>
         <module>dropwizard-auth</module>
+        <!-- 
         <module>dropwizard-example</module>
+        -->
         <module>dropwizard-forms</module>
         <module>dropwizard-views</module>
         <module>dropwizard-views-freemarker</module>
@@ -43,7 +45,9 @@
         <module>dropwizard-servlets</module>
         <module>dropwizard-lifecycle</module>
         <module>dropwizard-assets</module>
+        <!-- 
         <module>dropwizard-archetypes</module>
+         -->
         <module>dropwizard-benchmarks</module>
         <module>dropwizard-http2</module>
         <module>dropwizard-request-logging</module>
@@ -222,9 +226,9 @@
 
     <repositories>
         <repository>
-            <id>sonatype-nexus-snapshots</id>
+            <id>snapshot</id>
             <name>Sonatype Nexus Snapshots</name>
-            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+            <url>http://192.168.56.1:8082/repository/maven-snapshots/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -236,15 +240,15 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>snapshot</id>
+            <name>libs-snapshots</name>
+            <url>http://192.168.56.1:8082/repository/maven-snapshots/</url>
         </snapshotRepository>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
+		<repository>
+			<id>nexus</id>
+			<name>libs-release</name>
+			<url>http://192.168.56.1:8082/repository/maven-releases/</url>
+		</repository>
         <site>
             <id>dropwizard-site</id>
             <name>Dropwizard</name>
